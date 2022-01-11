@@ -22,7 +22,7 @@ export const ProductDetail = (props: { product: ProductTypes }) => {
       </p>
       <p className="mt-2 text-base text-gray-600">
         Kategori :{" "}
-        <Link href={`/category/${product?.category}`}>
+        <Link href={`/product?search=${product?.category}`}>
           <a className=" font-medium text-pastel-blue">{product?.category}</a>
         </Link>
       </p>

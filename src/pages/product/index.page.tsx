@@ -16,18 +16,20 @@ const Index = () => {
   const router = useRouter();
 
   const getProductsBySearchList = useCallback(async () => {
+    setIsLoading(true);
     const res = await getProductsBySearch(router.query.search);
 
     if (!res.error) {
       setProducts(res.data.products);
+      setIsLoading(false);
     } else {
       setProducts([]);
+      setIsLoading(false);
     }
   }, [router.query.search]);
 
   useEffect(() => {
     getProductsBySearchList();
-    setIsLoading(false);
   }, [getProductsBySearchList, router.query.search]);
 
   return isLoading ? (

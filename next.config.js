@@ -16,8 +16,8 @@ const nextConfig = {
     domains: ["*"],
   },
   env: {
-    NEXT_PUBLIC_API: "http://localhost:3001/api",
-    NEXT_PUBLIC_IMG: "http://localhost:3001/uploads",
+    NEXT_PUBLIC_API: "https://zevanyastore.herokuapp.com/api",
+    NEXT_PUBLIC_IMG: "https://zevanyastore.herokuapp.com/uploads",
     NEXT_LOCAL_API: "http://localhost:3001/api",
     NEXT_LOCAL_IMG: "http://localhost:3001/uploads",
   },

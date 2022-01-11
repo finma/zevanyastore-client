@@ -22,7 +22,7 @@ export const CategoryCard = (props: { label: string }) => {
           {label}
         </h3>
         <Image
-          src={`/img/${label}.jpg`}
+          src={`/img/${label.toLocaleLowerCase()}.jpg`}
           alt={label}
           width={200}
           height={250}
